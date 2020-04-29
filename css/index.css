@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Signika-bold;
+    src: url('../assets/fonts/Signika/Signika-Bold.ttf');
+}
+
+@font-face {
+    font-family: Signika-Regular;
+    src: url('../assets/fonts/Signika/Signika-Regular.ttf');
+}
+
+@font-face {
+    font-family: Signika-Semibold;
+    src: url('../assets/fonts/Signika/Signika-Semibold.ttf');
+}
+
+@font-face {
+    font-family: Signika-Light;
+    src: url('../assets/fonts/Signika/Signika-Light.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #5b5d1e !important;
+    fill: #5b5d1e !important;
+    text-decoration: none !important;
+    background-color: transparent;
+}
+
+.bg-inicio {
+    background-image: url("../assets/images/carousel-inicio-1.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+}
+
+.bg-clinica {
+    background-image: url("../assets/images/bg-apresentacaoDr.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    height: 100vh;
+}
+
+.menu {
+    background-color: #dbdb73;
+    border-radius: 25px;
+    padding: 0px 15px 0px 15px;
+    margin: 150px 10px 0px 10px;
+}
+
+.texto-menu {
+    font-family: 'Signika-Semibold';
+}
+
+.icon-redes-sociais {
+    position: relative;
+    bottom: 3px;
+}
+
+.posiciona-logo {
+    margin-top: 25vh;
+}
+
+.espaco-apresentacao-texto {
+    margin-top: 180px;
+}
+
+.espaco-apresentacao-carousel {
+    margin-top: 150px;
+}
+
+.titulo-apresentacao {
+    font-family: Signika-Bold;
+    color: #5b5d1e;
+    font-size: 28px;
+}
+
+.desc-apresentacao {
+    font-family: Signika-Light;
+    color: #5b5d1e;
+    font-size: 18px;
+}
+
+.bg-apresentacaoDr {
+    background-color: #d4d3ce;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.posiciona-foto-dr {
+    position: relative;
+    top: 20px;
+    left: 60px;
+    width: 49.5%;
+    height: auto;
+}
+
+.espaco-apresentacao-texto-dr {
+    margin-top: 120px;
+}
+
+.titulo-apresentacao-dr {
+    font-family: Signika-Bold;
+    color: #5b5d1e;
+    font-size: 28px;
+}
+
+.texto-apresentacao-dr {
+    font-family: Signika-Light;
+    color: #5b5d1e;
+    font-size: 18px;
+}
+
+.bg-tratamentos {
+    height: 100vh;
+    background-color: white;
+}
+
+.bg-tratamentos-dir {
+    background-color: #dbdb73 !important;
+    width: 66.6666666%;
+    height: 100vh;
+}
