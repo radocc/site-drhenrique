@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Signika-bold;
+    font-family: Signika-Bold;
     src: url('../assets/fonts/Signika/Signika-Bold.ttf');
 }
 
@@ -80,7 +80,7 @@ a {
 }
 
 .desc-apresentacao {
-    font-family: Signika-Light;
+    font-family: Signika-light;
     color: #5b5d1e;
     font-size: 18px;
 }
@@ -111,7 +111,7 @@ a {
 }
 
 .texto-apresentacao-dr {
-    font-family: Signika-Light;
+    font-family: Signika-light;
     color: #5b5d1e;
     font-size: 18px;
 }
@@ -125,4 +125,162 @@ a {
     background-color: #dbdb73 !important;
     width: 66.6666666%;
     height: 100vh;
+}
+
+.tratamentos-esq {
+    margin: 130px 0 0 30px;
+}
+
+.ul-tratamentos-dir {
+    margin: 260px 0 0 50px;
+}
+
+.titulo-tratamentos {
+    font-family: Signika-Bold;
+    color: #5b5d1e;
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+
+ul {
+    padding-inline-start: 25px !important;
+}
+
+.li-tratamentos {
+    position: relative;
+    list-style-type: disc;
+    font-family: Signika-regular;
+    color: #5b5d1e;
+    font-size: 22px;
+}
+
+.img-tratamentos {
+    background-color: #dbdb73 !important;
+    height: 100vh;
+    background-size: contain;
+    float: left;
+}
+
+.bg-contato {
+    background-color: #d4d3ce;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.mapa-contato {
+    width: 50vw;
+    height: 100vh;
+}
+
+.contato-dir {
+    padding: 50px 0 0 70px;
+}
+
+.form-contato {
+    margin: 50px 0 0 0;
+}
+
+.input-contato {
+    border-radius: 2px;
+    border: 1px solid #5b5d1e;
+    background-color: transparent;
+    width: 300px;
+    padding: 10px 0 6px 10px;
+}
+
+.btn-contato {
+    border-radius: 2px;
+    border: 1px solid #5b5d1e;
+    color: white;
+    background-color: #5b5d1e;
+    font-family: Signika-regular;
+    padding: 5px 20px;
+}
+
+/* MUDAR A COR DO PLACEHOLDER */
+
+::-webkit-input-placeholder {
+    color: #5b5d1e !important;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #5b5d1e !important;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #5b5d1e !important;
+}
+
+:-ms-input-placeholder {
+    color: #5b5d1e !important;
+}
+
+.titulo-contato {
+    font-family: Signika-Bold;
+    color: #5b5d1e;
+    font-size: 26px;
+}
+
+.desc-contato {
+    width: 420px;
+    font-family: Signika-light;
+    color: #5b5d1e;
+    font-size: 18px;
+}
+
+.toast-sucesso {
+    display: none;
+    color: #5b5d1e;
+    background-color: white;
+    position: fixed;
+    font-size: 18px;
+    font-family: Signika-light;
+    bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid #5b5d1e;
+    border-radius: 4px;
+}
+
+.toast-erro {
+    display: none;
+    color: red;
+    background-color: white;
+    position: fixed;
+    font-size: 18px;
+    font-family: Signika-light;
+    bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+
+.toast-ativo {
+    display: block !important;
+}
+
+.link-top {
+    border: 1px solid #5b5d1e;
+    height: 60px !important;
+    width: 60px !important;
+    position: fixed;
+    border-radius: 50%;
+    float: left;
+    bottom: 50px;
+    right: 50px;
+}
+
+.btn-top {
+    height: 40px !important;
+    width: 40px !important;
+    position: fixed;
+    float: right;
+    bottom: 60px;
+    right: 60px;
+}
+
+.esconde-btn-top {
+    display: none;
 }
