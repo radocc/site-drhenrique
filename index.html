@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Clínica Dr. Henrique</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/index.css">
 
@@ -17,15 +17,12 @@
                 <li class="nav-item">
                     <a href="#clinica" class="nav-link texto-menu">A CLÍNICA</a>
                 </li>
-                <span class="nav-link texto-menu">|</span>
                 <li class="nav-item">
                     <a href="#apresentacaoDr" class="nav-link texto-menu">DR.HENRIQUE MOTIZUKI</a>
                 </li>
-                <span class="nav-link texto-menu">|</span>
-                <li class="nav-item">
+                <li class="nav-item mr-3">
                     <a href="#tratamentos" class="nav-link texto-menu">TRATAMENTOS</a>
                 </li>
-                <span class="nav-link texto-menu">|</span>
                 <li class="nav-item">
                     <a href="#contato" class="nav-link texto-menu">CONTATO</a>
                 </li>
@@ -48,9 +45,10 @@
     </div>
     <!-- APRESENTAÇÃO DA CLINICA -->
     <div id="clinica" class="container-fluid bg-clinica">
-        <div class="row justify-content-center">
-            <div class="col-4 espaco-apresentacao-texto">
-                <p class="titulo-apresentacao">A CLÍNICA</p>
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+
+                <p class=" titulo-apresentacao">A CLÍNICA</p>
                 <p class="desc-apresentacao mb-4">
                     O Dr.Henrique Motizuki atende no Instituto Mussi,
                     localizado no edifício Max Saúde. Com um ambiente
@@ -68,7 +66,7 @@
                 </p>
                 <img width="20%" height="auto" src="assets/images/instituto-mussi.png" alt="Logo instituto mussi">
             </div>
-            <div class="col-6 espaco-apresentacao-carousel">
+            <div class="col-lg-6 col-md-12 esconde-carousel">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -78,16 +76,16 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/images/carousel-apresentacao-1.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/images/carousel-apresentacao-1.jpg" class="w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/carousel-apresentacao-2.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/images/carousel-apresentacao-2.jpg" class="w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/carousel-apresentacao-3.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/images/carousel-apresentacao-3.jpg" class="w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/carousel-apresentacao-4.jpg" class="d-block w-100" alt="...">
+                            <img src="assets/images/carousel-apresentacao-4.jpg" class="w-100" alt="...">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -105,9 +103,17 @@
     <!-- APRESENTAÇÃO DR. HENRIQUE -->
     <div id="apresentacaoDr" class="container-fluid bg-apresentacaoDr">
         <div class="row justify-content-center">
-            <img class="posiciona-foto-dr" src="assets/images/drHenrique.png" alt="Foto do Dr. Henrique">
-
-            <div class="col-5 espaco-apresentacao-texto-dr">
+            <div class="col-lg-7">
+                <img class="esconde-dr img1" src="assets/images/img1.png" alt="imagem de um circulo">
+                <img class="esconde-dr img2" src="assets/images/img2.png" alt="imagem de um circulo">
+                <img class="esconde-dr img3" src="assets/images/img3.png" alt="imagem de um circulo">
+                <img class="esconde-dr posiciona-foto-dr" src="assets/images/drHenrique.png" alt="Foto do Dr. Henrique">
+                <img class="esconde-dr img4" src="assets/images/img4.png" alt="imagem de um circulo">
+                <img class="esconde-dr img5" src="assets/images/img5.png" alt="imagem de um circulo">
+                <img class="esconde-dr img7" src="assets/images/img7.png" alt="imagem de um circulo">
+                <img class="esconde-dr img6" src="assets/images/img6.png" alt="imagem de um circulo">
+            </div>
+            <div class="col-lg-5 col-md-8 col-sm-10 espaco-apresentacao-texto-dr">
                 <p class="titulo-apresentacao-dr mb-4">
                     DR. HENRIQUE MOTIZUKI
                 </p>
@@ -127,25 +133,23 @@
     <!-- TRATAMENTOS -->
     <div id="tratamentos" class="container-fluid bg-tratamentos">
         <div class="row justify-content-center">
-            <div class="col">
-                <div class="d-flex justify-content-center">
-                    <div class="tratamentos-esq">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="alinha-div-centro">
+                    <ul style="width: 50%; margin: auto;">
                         <p class="titulo-tratamentos">TRATAMENTOS</p>
-                        <ul>
-                            <li class="li-tratamentos">Coluna</li>
-                            <li class="li-tratamentos">Cotovelo</li>
-                            <li class="li-tratamentos">Joelho</li>
-                            <li class="li-tratamentos">Mão</li>
-                            <li class="li-tratamentos">Ombro</li>
-                            <li class="li-tratamentos">Pé</li>
-                            <li class="li-tratamentos">Tornozelo</li>
-                            <li class="li-tratamentos">Quadril</li>
-                        </ul>
-                    </div>
+                        <li class="li-tratamentos">Coluna</li>
+                        <li class="li-tratamentos">Cotovelo</li>
+                        <li class="li-tratamentos">Joelho</li>
+                        <li class="li-tratamentos">Mão</li>
+                        <li class="li-tratamentos">Ombro</li>
+                        <li class="li-tratamentos">Pé</li>
+                        <li class="li-tratamentos">Tornozelo</li>
+                        <li class="li-tratamentos">Quadril</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col bg-tratamentos-dir">
-                <ul class="ul-tratamentos-dir">
+            <div class="col-lg-4 col-md-6 col-sm-12  p-0 bg-tratamentos-dir alinha-div-centro">
+                <ul style=" width: 50%; margin: auto;">
                     <li class="li-tratamentos">Infectologia</li>
                     <li class="li-tratamentos">Medicina Esportiva</li>
                     <li class="li-tratamentos">Ortopedia Pediátrica</li>
@@ -154,7 +158,7 @@
                     <li class="li-tratamentos">Tumores Ósseos</li>
                 </ul>
             </div>
-            <div class="col p-0">
+            <div class="col-lg-4 col-md-6 col-sm-12 p-0 " style="background-color: #dbdb73; overflow: hidden;">
 
                 <img class="img-tratamentos" src="assets/images/tratamentos.png"
                     alt="foto de doutor atendendo paciente">
@@ -164,42 +168,47 @@
     <!-- CONTATO -->
     <div id="contato" class="container-fluid bg-contato">
         <div class="row justify-content-center">
-            <div class="col-6 p-0">
+            <div class="col-lg-6 col-md-6 col-sm-12 p-0">
                 <iframe class="mapa-contato"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.973066342835!2d-52.67656148526758!3d-26.230064671394906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e552ec240e5427%3A0xd67ec43a6562053!2sAv.%20Brasil%2C%20450%20-%20Centro%2C%20Pato%20Branco%20-%20PR%2C%2085501-080!5e0!3m2!1spt-BR!2sbr!4v1588206966744!5m2!1spt-BR!2sbr"
                     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-            <div class="col-6 contato-dir">
-                <div class="posiciona-texto">
-                    <p class="titulo-contato">CONTATO</p>
-                    <p class="desc-contato">
-                        Edifício Max Saúde, Av.Brasil, 450 - Sala 02 - Centro,
-                        Pato Branco - PR CEP: 85501-071 <br>
-                        (46) 3220-2848
-                    </p>
-                    <p>
-                        <a href="mailto:drhenrique@hotmail.com">
-                            drhenrique@hotmail.com
-                        </a>
-                    </p>
+            <div class="col-lg-6 col-md-6 col-sm-12 centraliza-desc-contato">
+                <div class="alinha-div-centro">
+                    <div style=" width: 50%; margin: auto;">
+
+                        <p class="titulo-contato">CONTATO</p>
+                        <p class="desc-contato">
+                            Edifício Max Saúde, Av.Brasil, 450 - Sala 02 - Centro,
+                            Pato Branco - PR CEP: 85501-071 <br>
+                            (46) 3220-2848
+                        </p>
+                        <p>
+                            <a href="mailto:drhenrique@hotmail.com">
+                                drhenrique@hotmail.com
+                            </a>
+                        </p>
+
+                        <form class="form-contato">
+                            <div class="form-group">
+                                <input type="text" class="input-contato " id="formNome" placeholder="NOME" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="input-contato " id="formEmail" aria-describedby="emailHelp"
+                                    placeholder="E-MAIL" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="input-contato " id="formAssunto" placeholder="ASSUNTO"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="input-contato " id="formMensagem" rows="3" placeholder="MENSAGEM"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn-contato " onClick="fazerContato()">ENVIAR</button>
+                        </form>
+                    </div>
                 </div>
-                <form class="form-contato">
-                    <div class="form-group">
-                        <input type="text" class="input-contato" id="formNome" placeholder="NOME" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="input-contato" id="formEmail" aria-describedby="emailHelp"
-                            placeholder="E-MAIL" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="input-contato" id="formAssunto" placeholder="ASSUNTO" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="input-contato" id="formMensagem" rows="3" placeholder="MENSAGEM"
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn-contato" onClick="fazerContato()">ENVIAR</button>
-                </form>
             </div>
         </div>
     </div>
