@@ -6,20 +6,23 @@ $(document).ready(function () {
     if (scrollBottom > 4874)
         $('.img-tratamentos').addClass('anima-img-tratamentos');
     $(window).scroll(function () {
+
         var scrollBottom = $(window).scrollTop() + $(window).height();
-        if ($(this).scrollTop() > 160) {
+        if ($(this).scrollTop() > 160)
             $('#btn-top').removeClass('esconde-btn-top');
-        }
-        else {
+
+        else
             $('#btn-top').addClass('esconde-btn-top');
-        }
-        if (scrollBottom > 4004) {
+
+        if (scrollBottom > 4004)
             $('.esconde-dr').addClass('animation-img');
-        }
+        else
+            $('.esconde-dr').removeClass('animation-img');
+
         if (scrollBottom > 4874)
             $('.img-tratamentos').addClass('anima-img-tratamentos');
-        //console.log(scrollBottom);
-
+        else
+            $('.img-tratamentos').removeClass('anima-img-tratamentos');
     });
 });
 

@@ -67,10 +67,6 @@ a {
     height: 100vh;
 }
 
-.espaco-apresentacao-texto {
-    margin-top: 180px;
-}
-
 .titulo-apresentacao {
     font-family: Signika-Bold;
     color: #5b5d1e;
@@ -260,6 +256,7 @@ a {
 
 .bg-tratamentos-dir {
     background-color: #dbdb73 !important;
+    height: 100vh;
 }
 
 .titulo-tratamentos {
@@ -334,6 +331,33 @@ ul {
     .esconde {
         display: none !important;
     }
+    .bg-tratamentos {
+        height: unset;
+        background-color: white;
+    }
+    .titulo-contato {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 346px) {
+    .espaco-apresentacao-texto-dr {
+        margin-top: 60px !important;
+    }
+    .titulo-apresentacao {
+        margin-top: -50px !important;
+    }
+}
+
+.alinha-div-contato-centro {
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
 }
 
 .bg-contato {
