@@ -132,6 +132,7 @@ a {
 }
 
 .animation-img {
+    visibility: visible !important;
     -webkit-animation: fadeIn ease-in-out;
     -moz-animation: fadeIn ease-in-out;
     -o-animation: fadeIn ease-in-out;
@@ -476,4 +477,8 @@ ul {
 
 .esconde-btn-top {
     display: none;
+}
+
+.hidden {
+    visibility: hidden;
 }

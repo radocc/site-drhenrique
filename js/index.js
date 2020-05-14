@@ -1,10 +1,38 @@
 $(document).ready(function () {
+
+    // $('#linkDr').click(function() {
+    //     $('.esconde-dr').removeClass('animation-img');  
+    //     setTimeout(() => {
+    //         $('.esconde-dr').addClass('animation-img');    
+    //     }, 500);
+        
+    // });
+
+    $('#fotoDr').on('inview', function(event, isInView) {
+        if (isInView)
+            $('.esconde-dr').addClass('animation-img');
+        else
+            $('.esconde-dr').removeClass('animation-img'); 
+    });
+
+    $('#imgTratamentos').on('inview', function(event, isInView) {
+        if (isInView)
+            setTimeout(() => {
+                $('.img-tratamentos').addClass('anima-img-tratamentos');
+            }, 300);
+            
+        else
+            $('.img-tratamentos').removeClass('anima-img-tratamentos'); 
+    });
+    
+
     var scrollBottom = $(window).scrollTop() + $(window).height();
-    if (scrollBottom > 4004) {
-        $('.esconde-dr').addClass('animation-img');
-    }
-    if (scrollBottom > 4874)
-        $('.img-tratamentos').addClass('anima-img-tratamentos');
+            
+    // if (scrollBottom > 4004) {
+    //     $('.esconde-dr').addClass('animation-img');
+    // }
+    // if (scrollBottom > 4874)
+    //     $('.img-tratamentos').addClass('anima-img-tratamentos');
     $(window).scroll(function () {
 
         var scrollBottom = $(window).scrollTop() + $(window).height();
@@ -14,15 +42,6 @@ $(document).ready(function () {
         else
             $('#btn-top').addClass('esconde-btn-top');
 
-        if (scrollBottom > 4004)
-            $('.esconde-dr').addClass('animation-img');
-        else
-            $('.esconde-dr').removeClass('animation-img');
-
-        if (scrollBottom > 4874)
-            $('.img-tratamentos').addClass('anima-img-tratamentos');
-        else
-            $('.img-tratamentos').removeClass('anima-img-tratamentos');
     });
 });
 

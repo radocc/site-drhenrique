@@ -15,16 +15,16 @@
         <div class="row justify-content-center ">
             <ul class="nav menu">
                 <li class="nav-item">
-                    <a href="#clinica" class="nav-link texto-menu">A CLÍNICA</a>
+                    <a id="linkClinica" href="#clinica" class="nav-link texto-menu">A CLÍNICA</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#apresentacaoDr" class="nav-link texto-menu">DR.HENRIQUE MOTIZUKI</a>
+                    <a id="linkDr" href="#apresentacaoDr" class="nav-link texto-menu">DR.HENRIQUE MOTIZUKI</a>
                 </li>
                 <li class="nav-item mr-3">
-                    <a href="#tratamentos" class="nav-link texto-menu">TRATAMENTOS</a>
+                    <a id="linkTratamentos" href="#tratamentos" class="nav-link texto-menu">TRATAMENTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contato" class="nav-link texto-menu">CONTATO</a>
+                    <a id="linkContato" href="#contato" class="nav-link texto-menu">CONTATO</a>
                 </li>
                 <li class="nav-link">
                     <a class="icon-redes-sociais" href="https://www.instagram.com/drhenriquemotizuki/">
@@ -104,14 +104,14 @@
     <div id="apresentacaoDr" class="container-fluid bg-apresentacaoDr">
         <div class="row justify-content-center">
             <div class="col-lg-7">
-                <img class="esconde-dr img1" src="assets/images/img1.png" alt="imagem de um circulo">
-                <img class="esconde-dr img2" src="assets/images/img2.png" alt="imagem de um circulo">
-                <img class="esconde-dr img3" src="assets/images/img3.png" alt="imagem de um circulo">
-                <img class="esconde-dr posiciona-foto-dr" src="assets/images/drHenrique.png" alt="Foto do Dr. Henrique">
-                <img class="esconde-dr img4" src="assets/images/img4.png" alt="imagem de um circulo">
-                <img class="esconde-dr img5" src="assets/images/img5.png" alt="imagem de um circulo">
-                <img class="esconde-dr img7" src="assets/images/img7.png" alt="imagem de um circulo">
-                <img class="esconde-dr img6" src="assets/images/img6.png" alt="imagem de um circulo">
+                <img class="esconde-dr img1 hidden" src="assets/images/img1.png" alt="imagem de um circulo">
+                <img class="esconde-dr img2 hidden" src="assets/images/img2.png" alt="imagem de um circulo">
+                <img class="esconde-dr img3 hidden" src="assets/images/img3.png" alt="imagem de um circulo">
+                <img id="fotoDr" class="esconde-dr posiciona-foto-dr" src="assets/images/drHenrique.png" alt="Foto do Dr. Henrique">
+                <img class="esconde-dr img4 hidden" src="assets/images/img4.png" alt="imagem de um circulo">
+                <img class="esconde-dr img5 hidden" src="assets/images/img5.png" alt="imagem de um circulo">
+                <img class="esconde-dr img7 hidden" src="assets/images/img7.png" alt="imagem de um circulo">
+                <img class="esconde-dr img6 hidden" src="assets/images/img6.png" alt="imagem de um circulo">
             </div>
             <div class="col-lg-5 col-md-8 col-sm-10 espaco-apresentacao-texto-dr">
                 <p class="titulo-apresentacao-dr mb-4">
@@ -160,7 +160,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 p-0 " style="background-color: #dbdb73; overflow: hidden;">
 
-                <img class="img-tratamentos" src="assets/images/tratamentos.png"
+                <img id="imgTratamentos" class="img-tratamentos" src="assets/images/tratamentos.png"
                     alt="foto de doutor atendendo paciente">
             </div>
         </div>
@@ -234,6 +234,7 @@
         </div>
     </div>
     <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
