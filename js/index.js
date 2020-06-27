@@ -8,6 +8,32 @@ $(document).ready(function () {
         
     // });
 
+    $('#clinica').on('inview', function(event, isInView) {
+        if (isInView) {
+            setTimeout(() => {
+                $('.titulo-apresentacao').addClass('animation-titulo-apresentacao');
+                $('.desc-apresentacao').addClass('animation-desc-apresentacao');
+            }, 500);
+        } 
+        else {
+            $('.titulo-apresentacao').removeClass('animation-titulo-apresentacao');
+            $('.desc-apresentacao').removeClass('animation-desc-apresentacao');
+        }
+    })
+
+    $('#apresentacaoDr').on('inview', function(event, isInView) {
+        if (isInView) {
+            setTimeout(() => {
+                $('.titulo-apresentacao-dr').addClass('animation-titulo-apresentacao-dr');
+                $('.texto-apresentacao-dr').addClass('animation-texto-apresentacao-dr');
+            }, 500);
+        } 
+        else {
+            $('.titulo-apresentacao-dr').removeClass('animation-titulo-apresentacao-dr');
+            $('.texto-apresentacao-dr').removeClass('animation-texto-apresentacao-dr');
+        }
+    })
+
     $('#fotoDr').on('inview', function(event, isInView) {
         if (isInView)
             $('.esconde-dr').addClass('animation-img');

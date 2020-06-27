@@ -4242,6 +4242,8 @@ input[type="button"].btn-block {
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+  color: rgb(246, 241, 241) !important;
+  text-shadow: 0 0 26px #5b5d1e;
 }
 
 .nav-link.disabled {

@@ -43,6 +43,20 @@ a {
     background-color: #dbdb73;
     border-radius: 25px;
     margin: 150px 10px 0px 10px;
+    animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-700px);
+              transform: translateY(-700px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
 }
 
 .texto-menu {
@@ -71,12 +85,44 @@ a {
     font-family: Signika-Bold;
     color: #5b5d1e;
     font-size: 28px;
+    opacity: 0;
+}
+
+.animation-titulo-apresentacao {
+    animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-200px);
+              transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+.animation-desc-apresentacao {
+    animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .desc-apresentacao {
     font-family: Signika-light;
     color: #5b5d1e;
     font-size: 18px;
+    opacity: 0;
 }
 
 .bg-apresentacaoDr {
@@ -232,12 +278,44 @@ a {
     font-family: Signika-Bold;
     color: #5b5d1e;
     font-size: 28px;
+    opacity: 0;
 }
 
 .texto-apresentacao-dr {
     font-family: Signika-light;
     color: #5b5d1e;
     font-size: 18px;
+    opacity: 0;
+}
+
+.animation-titulo-apresentacao-dr {
+    animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-texto-apresentacao-dr {
+    animation: slide-in-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(200px);
+              transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
 }
 
 .bg-tratamentos {
