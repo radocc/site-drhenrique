@@ -5,55 +5,68 @@ $(document).ready(function () {
     //     setTimeout(() => {
     //         $('.esconde-dr').addClass('animation-img');    
     //     }, 500);
-        
+
     // });
 
-    $('#clinica').on('inview', function(event, isInView) {
+    $('#inicio').on('inview', function (event, isInView) {
+        if (isInView) {
+            setTimeout(() => {
+                $('.img-logo-left').addClass('animation-img-logo-left');
+                $('.img-logo-right').addClass('animation-img-logo-right');
+            }, 500);
+        }
+        else {
+            $('.img-logo-left').removeClass('animation-img-logo-left');
+            $('.img-logo-right').removeClass('animation-img-logo-right');
+        }
+    });
+
+    $('#clinica').on('inview', function (event, isInView) {
         if (isInView) {
             setTimeout(() => {
                 $('.titulo-apresentacao').addClass('animation-titulo-apresentacao');
                 $('.desc-apresentacao').addClass('animation-desc-apresentacao');
             }, 500);
-        } 
+        }
         else {
             $('.titulo-apresentacao').removeClass('animation-titulo-apresentacao');
             $('.desc-apresentacao').removeClass('animation-desc-apresentacao');
         }
     })
 
-    $('#apresentacaoDr').on('inview', function(event, isInView) {
+    $('#apresentacaoDr').on('inview', function (event, isInView) {
         if (isInView) {
             setTimeout(() => {
                 $('.titulo-apresentacao-dr').addClass('animation-titulo-apresentacao-dr');
                 $('.texto-apresentacao-dr').addClass('animation-texto-apresentacao-dr');
             }, 500);
-        } 
+        }
         else {
             $('.titulo-apresentacao-dr').removeClass('animation-titulo-apresentacao-dr');
             $('.texto-apresentacao-dr').removeClass('animation-texto-apresentacao-dr');
         }
     })
 
-    $('#fotoDr').on('inview', function(event, isInView) {
+    $('#fotoDr').on('inview', function (event, isInView) {
         if (isInView)
             $('.esconde-dr').addClass('animation-img');
         else
-            $('.esconde-dr').removeClass('animation-img'); 
+            $('.esconde-dr').removeClass('animation-img');
     });
 
-    $('#imgTratamentos').on('inview', function(event, isInView) {
+    $('#imgTratamentos').on('inview', function (event, isInView) {
         if (isInView)
             setTimeout(() => {
                 $('.img-tratamentos').addClass('anima-img-tratamentos');
             }, 300);
-            
+
         else
-            $('.img-tratamentos').removeClass('anima-img-tratamentos'); 
+            $('.img-tratamentos').removeClass('anima-img-tratamentos');
     });
-    
+
 
     var scrollBottom = $(window).scrollTop() + $(window).height();
-            
+
     // if (scrollBottom > 4004) {
     //     $('.esconde-dr').addClass('animation-img');
     // }
